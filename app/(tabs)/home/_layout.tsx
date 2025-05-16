@@ -1,12 +1,15 @@
 import { Stack } from "expo-router";
 
+export const unstable_settings = {
+  initialRouteName: "index",
+};
+
 export default function HomeLayout() {
   return (
     <Stack
       screenOptions={{
         contentStyle: { backgroundColor: "#ffffff" },
         headerShadowVisible: false,
-        headerTitleAlign: "center",
         animation: "fade",
       }}>
       <Stack.Screen name="index" />

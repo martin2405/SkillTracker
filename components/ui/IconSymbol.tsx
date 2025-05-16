@@ -19,6 +19,7 @@ const MAPPING = {
   "chart.xyaxis.line": "show-chart",
   "gearshape.fill": "settings",
   plus: "add",
+  minus: "remove",
 } as IconMapping;
 
 /**
