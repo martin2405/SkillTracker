@@ -6,11 +6,14 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
+        headerShadowVisible: false,
+        sceneStyle: { backgroundColor: "#ffffff", paddingHorizontal: 16 },
+        tabBarShowLabel: false,
       }}>
       <Tabs.Screen
         name="home"
         options={{
-          title: "List",
+          title: "Home",
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="list.dash" color={color} />,
         }}
       />

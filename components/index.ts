@@ -1,3 +1,6 @@
+// Buttons
+export { default as CircleAddButton } from "./buttons/CircleAddButton";
+
 // UI
 export { default as IconSymbol } from "./ui/IconSymbol";
 
