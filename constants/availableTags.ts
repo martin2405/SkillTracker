@@ -3,10 +3,10 @@ export const availableTags = [
   "Fitness",
   "Coding",
   "Reading",
-  "Language learning",
   "Meditation",
   "Music",
   "Writing",
   "Design",
   "Public speaking",
+  "Language learning",
 ];

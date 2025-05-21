@@ -1,4 +1,4 @@
-import { LabelInput, TabsList, WeeklyGoalBtn } from "@/components";
+import { LabelInput, TagsList, WeeklyGoalBtn } from "@/components";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import { addGoalInitValues, addGoalValidationSchema } from "@/validators/addGoalValidator";
 import { useRouter } from "expo-router";
@@ -37,7 +37,7 @@ export default function AddGoal() {
   return (
     <View style={{ rowGap: 32 }}>
       <LabelInput label="Name" value={values.name} onChangeText={handleChange("name")} />
-      <TabsList tags={values.tags} handleTag={handleTag} />
+      <TagsList tags={values.tags} handleTag={handleTag} />
       <WeeklyGoalBtn
         daysPerWeek={values.daysPerWeek}
         addDay={() => setFieldValue("daysPerWeek", ++values.daysPerWeek)}

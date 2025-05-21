@@ -6,9 +6,10 @@ interface TagBtn extends TouchableOpacityProps {
   isActive: boolean;
 }
 
-export default function TagBtn({ tag, isActive, onPress }: TagBtn) {
+export default function TagBtn({ tag, isActive, disabled, onPress }: TagBtn) {
   return (
     <TouchableOpacity
+      disabled={disabled}
       onPress={onPress}
       style={[
         styles.container,
@@ -17,11 +18,12 @@ export default function TagBtn({ tag, isActive, onPress }: TagBtn) {
           borderColor: isActive ? colors.tagBackground : colors.disabled,
         },
       ]}>
-      <Text style={{ color: isActive ? colors.primary : colors.disabled }}>{tag}</Text>
+      <Text style={[styles.text, { color: isActive ? colors.primary : colors.disabled }]}>{tag}</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 6, borderRadius: 8, borderWidth: 1 },
+  container: { padding: 6, borderRadius: 8, borderWidth: 1, alignSelf: "flex-start" },
+  text: { fontFamily: "Manrope-Regular" },
 });

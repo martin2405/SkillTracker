@@ -8,7 +8,7 @@ export { default as LabelInput } from "./inputs/LabelInput";
 
 // UI
 export { default as IconSymbol } from "./ui/IconSymbol";
-export { default as TabsList } from "./ui/TabsList";
+export { default as TagsList } from "./ui/TagsList";
 
 // Other
 export { default as Conditional } from "./Conditional";

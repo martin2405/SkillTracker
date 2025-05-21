@@ -3,12 +3,12 @@ import { StyleSheet, View } from "react-native";
 import TagBtn from "../buttons/TagBtn";
 import ComponentLabel from "../texts/ComponentLabel";
 
-interface TabsList {
+interface TagsListProps {
   handleTag: (isActive: boolean, tag: string) => void;
   tags: string[];
 }
 
-export default function TabsList({ tags, handleTag }: TabsList) {
+export default function TagsList({ tags, handleTag }: TagsListProps) {
   return (
     <View>
       <ComponentLabel text="Tags (up to 3)" />
